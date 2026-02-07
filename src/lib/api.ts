@@ -1,4 +1,5 @@
-const BASE = "http://localhost:5000/api";
+const BASE = "https://canteen-rush.onrender.com/api";
+
 
 export async function placeOrder(items: any) {
   const res = await fetch(BASE + "/orders", {
