@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 30% 97%;
+    --foreground: 40 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 40 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 40 30% 10%;
+
+    --primary: 45 90% 48%;
+    --primary-foreground: 40 30% 10%;
+
+    --secondary: 45 20% 92%;
+    --secondary-foreground: 40 30% 15%;
+
+    --muted: 45 15% 94%;
+    --muted-foreground: 40 10% 45%;
+
+    --accent: 45 60% 92%;
+    --accent-foreground: 40 80% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 15% 88%;
+    --input: 45 15% 88%;
+    --ring: 45 90% 48%;
+
+    --radius: 0.625rem;
+
+    /* Rush level colors */
+    --rush-low: 152 60% 42%;
+    --rush-low-bg: 152 60% 95%;
+    --rush-medium: 38 92% 50%;
+    --rush-medium-bg: 38 92% 95%;
+    --rush-high: 0 72% 55%;
+    --rush-high-bg: 0 72% 95%;
+
+    /* Status colors */
+    --status-pending: 220 15% 60%;
+    --status-pending-bg: 220 15% 94%;
+    --status-preparing: 38 92% 50%;
+    --status-preparing-bg: 38 92% 95%;
+    --status-ready: 152 60% 42%;
+    --status-ready-bg: 152 60% 95%;
+
+    /* Sidebar */
+    --sidebar-background: 40 25% 14%;
+    --sidebar-foreground: 40 15% 85%;
+    --sidebar-primary: 45 90% 55%;
+    --sidebar-primary-foreground: 40 30% 10%;
+    --sidebar-accent: 40 25% 20%;
+    --sidebar-accent-foreground: 40 15% 90%;
+    --sidebar-border: 40 25% 22%;
+    --sidebar-ring: 45 90% 55%;
+  }
+
+  .dark {
+    --background: 40 25% 8%;
+    --foreground: 40 15% 92%;
+    --card: 40 25% 12%;
+    --card-foreground: 40 15% 92%;
+    --popover: 40 25% 12%;
+    --popover-foreground: 40 15% 92%;
+    --primary: 45 90% 55%;
+    --primary-foreground: 40 30% 10%;
+    --secondary: 40 20% 18%;
+    --secondary-foreground: 40 15% 90%;
+    --muted: 40 20% 18%;
+    --muted-foreground: 40 10% 55%;
+    --accent: 40 25% 20%;
+    --accent-foreground: 45 80% 65%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 20% 20%;
+    --input: 40 20% 20%;
+    --ring: 45 90% 55%;
+    --sidebar-background: 40 25% 6%;
+    --sidebar-foreground: 40 15% 80%;
+    --sidebar-primary: 45 90% 55%;
+    --sidebar-primary-foreground: 40 30% 10%;
+    --sidebar-accent: 40 25% 12%;
+    --sidebar-accent-foreground: 40 15% 85%;
+    --sidebar-border: 40 25% 14%;
+    --sidebar-ring: 45 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
